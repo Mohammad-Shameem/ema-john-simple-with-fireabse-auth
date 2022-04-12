@@ -36,8 +36,8 @@ const Orders = () => {
                 <div className='order-cart'>
                     <Cart cart={cart}>
 
-                        <button onClick={() => navigate("/inventory")} className='proceed-chekcout-button'>
-                            <p>Proceed Checkout</p>
+                        <button onClick={() => navigate("/shipment")} className='proceed-chekcout-button'>
+                            <p>Proceed Shipping</p>
                             {<FontAwesomeIcon icon={faCreditCard}></FontAwesomeIcon>}
                         </button>
 

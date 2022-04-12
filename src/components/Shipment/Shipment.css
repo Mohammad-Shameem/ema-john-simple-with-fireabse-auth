@@ -1,0 +1,11 @@
+.shipping-submit {
+    width: 415px;
+    height: 55px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}

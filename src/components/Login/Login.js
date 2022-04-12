@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 
@@ -15,7 +15,8 @@ const Login = () => {
         loading,
         error
     ] = useSignInWithEmailAndPassword(auth)  //ai hook ta theke amra 3 ta jinish pabo user,error,loading tai amra user niye nicci ebong seta diye condition korechi.
-
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/'
 
     const handleEmailBlur = event => {
         setEmail(event.target.value)
@@ -27,9 +28,12 @@ const Login = () => {
         event.preventDefault()  //when we use form to get data from user and if user entry the required data and submit the form,the form reload by default.Its called form default behaviour.but its annoying for ux.so we can stop the thing when user submit the form by this way.
         signInWithEmailAndPassword(email, password)
     }
-    if (user) {  //ekhane react er jokhon kono state change hoy tokhon se re render korar jonno abar chole.tai porerbar se jokhon user ke pabe ba user er deya data gulo correct hole user ke pabe tokhon se amader deya page e user ke niye jabe.ekhane sob re render er khela.
+    // if (user) {    //ekhane react er jokhon kono state change hoy tokhon se re render korar jonno abar chole.tai porerbar se jokhon user ke pabe ba user er deya data gulo correct hole user ke pabe tokhon se amader deya page e user ke niye jabe.ekhane sob re render er khela.
+    //     navigate('/order')
+    // }
+    if (user) {
 
-        navigate("/orders")
+        navigate(from, { replace: true })   //ekhane bola hocche je user jekhan theke amader login page e ashce user ke amra abar sekhane pathiye dibo.
     }
 
     return (

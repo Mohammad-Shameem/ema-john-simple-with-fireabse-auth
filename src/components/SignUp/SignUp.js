@@ -45,9 +45,6 @@ const SignUp = () => {
         }
         createUserWithEmailAndPassword(email, password)
 
-
-
-
     }
     return (
         <div onSubmit={handleCreateUser} className='signup-form'>
