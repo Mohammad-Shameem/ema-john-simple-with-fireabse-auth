@@ -28,7 +28,19 @@
    project and then click get started then choose your provider.Remember every provider has own and 
    different rule to be enabled.Then click enable and  follow all rules and save your provider to enable
    it.(in this project we enabled email and password only not with Email link (passwordless sign-in))
-*/
+9. For this project we installed the firebase hook from react firebase hooks github command with
+   npm install --save react-firebase-hooks
+10.   Then scorll down little in react firebase hooks github page and clicked Authentication Hooks.And then
+      we again scroll down for our authentication options.
+11.   Then we select useCreateUserWithEmailAndPassword for create a new user or sign up a new user.
+12.   if user is created we redirect the user to expected page.
+13.   Then we implement the const signInWithEmailAndPassword by const
+      [signInWithEmailAndPassword] = useSignInWithEmailAndPassword()   (we just followed documentation 
+      of react firbase hooks)
+14.   For Private route set we search react router and then go to authentication.ande then find out the 
+      required auth.
+
+
 
 
 /* 

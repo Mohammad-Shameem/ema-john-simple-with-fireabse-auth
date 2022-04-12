@@ -6,15 +6,15 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDWFR2kSwUgLin5_Xjc8US0hA5JbPV_HII",
-    authDomain: "ema-john-simple-cf7ca.firebaseapp.com",
-    projectId: "ema-john-simple-cf7ca",
-    storageBucket: "ema-john-simple-cf7ca.appspot.com",
-    messagingSenderId: "15157054126",
-    appId: "1:15157054126:web:7189ce0782263bae84bb3f"
+    apiKey: "AIzaSyBaJyjFV8BLm2_CwWSxUCvFxXu9ZgwsfZU",
+    authDomain: "ema-john-simple-caea9.firebaseapp.com",
+    projectId: "ema-john-simple-caea9",
+    storageBucket: "ema-john-simple-caea9.appspot.com",
+    messagingSenderId: "124993407209",
+    appId: "1:124993407209:web:b1cd18e06b8579da404878"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
-export default auth;    //amra auth ke ekhan thekei export korlam karon amra ekhan react firebase hook use korbo tai amader auth ekbar call korte hoy abar app ke call korte hoy. ebong app ke auth er kache dite hoy. tai kichu advantage pawar jonno sei kajta ekhane korlma ebong auth er kache app ke diye dilam ebong auth default export korlam.
+export default auth;   //amra auth ke ekhan thekei export korlam karon amra ekhan react firebase hook use korbo tai amader auth ekbar call korte hoy abar app ke call korte hoy. ebong app ke auth er kache dite hoy. tai kichu advantage pawar jonno sei kajta ekhane korlma ebong auth er kache app ke diye dilam ebong auth default export korlam.

@@ -10,6 +10,7 @@ const Header = () => {
                 <Link to={"/shop"}>Shop</Link>            {/* ekhane je link deya ache thik same link dite hobe route e o nahole jotoi click koruk pabe na. */}
                 <Link to={"/orders"}>Order</Link>
                 <Link to={"/inventory"}>Inventory</Link>
+                <Link to={"/login"} > Login</Link>
                 <Link to={"/about"} > About</Link>
             </div >
         </nav >

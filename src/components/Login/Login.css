@@ -1,0 +1,128 @@
+.login-form {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    box-shadow: -8px 8px #FFE0B3;
+
+
+}
+
+
+.form-title {
+    font-size: 35px;
+    font-weight: 400;
+    color: #2A414F;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.input-group input {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-submit {
+    width: 415px;
+    height: 55px;
+    background-color: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.form-submit:hover {
+    background-color: rgba(255, 153, 0, 0.5);
+
+}
+
+.form-link {
+    color: #FF9900;
+    text-decoration: none;
+
+}
+
+.form-container p {
+    text-align: center;
+}
+
+.line-div hr {
+    width: 145px;
+    height: 0px;
+    border: 1px solid #95A0A7;
+
+
+}
+
+.line-div {
+    display: flex;
+    /*   display: inline; */
+}
+
+.line-div p {
+    color: rgba(149, 160, 167, 1);
+    font-size: 17px;
+    font-weight: 400px;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.google-font {
+    width: 32px;
+    height: 32px;
+
+}
+
+.google-btn {
+    background-color: white;
+    width: 415px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(149, 160, 167, 1);
+    border-radius: 8px;
+    margin-top: 29px;
+
+
+}
+
+#text {
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.form-container button {
+    margin-bottom: 43px;
+}
